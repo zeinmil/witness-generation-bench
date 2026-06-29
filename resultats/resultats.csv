@@ -1,0 +1,19 @@
+dataset_name,schema_name,schema_size_bytes,not_counts,model_output,valid,reason,condition
+Github_easy,o90953.json,3220,1,"{""id"": ""123"", ""jsonrpc"": ""2.0"", ""result"": ""success"", ""error"": null}",False,None is not of type 'object',zero-shot
+Github_easy,o1327.json,9174,2,<instance tronquée dans la capture - reproduction de schéma>,False,"JSON mal formé : Expecting ',' delimiter: line 29 column 79 (char 1293)",zero-shot
+Github_easy,o37788.json,4050,1,<instance tronquée dans la capture - reproduction de schéma>,False,"JSON mal formé : Expecting ',' delimiter: line 25 column 10 (char 831)",zero-shot
+Github_easy,o37787.json,6041,1,<instance tronquée dans la capture - reproduction de schéma>,False,"JSON mal formé : Expecting ',' delimiter: line 30 column 18 (char 976)",zero-shot
+Github_easy,o35866.json,8109,1,<instance tronquée dans la capture - reproduction de schéma>,False,"JSON mal formé : Expecting ',' delimiter: line 18 column 14 (char 534)",zero-shot
+Github_easy,o83707.json,554,1,"{""name"": ""John Doe"", ""age"": 12, ""league"": ""intramural""}",False,'intramural' should not be valid under {'enum': ['intramural']},zero-shot
+Github_easy,o37786.json,5242,1,<instance tronquée dans la capture - reproduction de schéma>,False,"JSON mal formé : Expecting ',' delimiter: line 11 column 18 (char 489)",zero-shot
+Github_easy,o84363.json,973,1,"{""platforms"": [""Linux"", ""Windows""]}",False,"['Linux', 'Windows'] is not of type 'object'",zero-shot
+Github_easy,o91584.json,1147,2,<instance tronquée dans la capture - reproduction de schéma>,False,JSON mal formé : Invalid \escape: line 3 column 19 (char 55),zero-shot
+Github_easy,o90953.json,3220,1,"{""id"": 1, ""jsonrpc"": ""2.0"", ""result"": ""success"", ""error"": null}",False,invalide : None is not of type 'object',few-shot
+Github_easy,o1327.json,9174,2,,False,prompt trop long (1881 tokens) - overflow,few-shot
+Github_easy,o37788.json,4050,1,<instance tronquée dans la capture>,False,tronqué / aucun objet JSON complet,few-shot
+Github_easy,o37787.json,6041,1,"{""name"": ""Arial"", ""age"": 30, ""status"": ""active"", ""fontFamily"": ""serif"", ""fontDefinition"": {""family"": [""Arial""], ""size"": 12, ""style"": ""italic"", ""weight"": ""bold""}, ""fontResources"": {""$scaleFactor"": ""lower"", ""$fallbackLanguage"": ""en""}}",False,invalide : 30 is not valid under any of the given schemas,few-shot
+Github_easy,o35866.json,8109,1,"{""address"": {""country"": ""USA"", ""state"": ""TX"", ""postalCode"": ""97211""}, ""street"": ""123 Main St"", ""street2"": ""Avenue"", ""city"": ""Austin""}",False,"invalide : Additional properties are not allowed ('city', 'street', 'street2' were unexpected)",few-shot
+Github_easy,o83707.json,554,1,"{""name"": ""Alice"", ""age"": 12, ""league"": ""intramural""}",False,invalide : 'intramural' should not be valid under {'enum': ['intramural']},few-shot
+Github_easy,o37786.json,5242,1,<instance tronquée dans la capture>,False,tronqué / aucun objet JSON complet,few-shot
+Github_easy,o84363.json,973,1,"{""platforms"": [""Windows"", ""Linux""]}",False,"invalide : ['Windows', 'Linux'] is not of type 'object'",few-shot
+Github_easy,o91584.json,1147,2,"{""@context"": ""http://www.w3.org/ns/anno.jsonld""}",True,,few-shot

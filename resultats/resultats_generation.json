@@ -1,0 +1,70 @@
+[
+  {
+    "fichier": "o90953.json",
+    "instance": {
+      "id": "123",
+      "jsonrpc": "2.0",
+      "result": "success",
+      "error": null
+    },
+    "valide": false,
+    "erreur": "None is not of type 'object'"
+  },
+  {
+    "fichier": "o1327.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting ',' delimiter: line 29 column 79 (char 1293)"
+  },
+  {
+    "fichier": "o37788.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting ',' delimiter: line 25 column 10 (char 831)"
+  },
+  {
+    "fichier": "o37787.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting ',' delimiter: line 30 column 18 (char 976)"
+  },
+  {
+    "fichier": "o35866.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting ',' delimiter: line 18 column 14 (char 534)"
+  },
+  {
+    "fichier": "o83707.json",
+    "instance": {
+      "name": "John Doe",
+      "age": 12,
+      "league": "intramural"
+    },
+    "valide": false,
+    "erreur": "'intramural' should not be valid under {'enum': ['intramural']}"
+  },
+  {
+    "fichier": "o37786.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting ',' delimiter: line 11 column 18 (char 489)"
+  },
+  {
+    "fichier": "o84363.json",
+    "instance": {
+      "platforms": [
+        "Linux",
+        "Windows"
+      ]
+    },
+    "valide": false,
+    "erreur": "['Linux', 'Windows'] is not of type 'object'"
+  },
+  {
+    "fichier": "o91584.json",
+    "instance": "<instance tronquée dans la capture - reproduction de schéma>",
+    "valide": false,
+    "erreur": "JSON mal formé : Invalid \\escape: line 3 column 19 (char 55)"
+  }
+]

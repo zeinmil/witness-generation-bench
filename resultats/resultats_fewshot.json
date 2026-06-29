@@ -1,0 +1,98 @@
+[
+  {
+    "fichier": "o90953.json",
+    "instance": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": "success",
+      "error": null
+    },
+    "valide": false,
+    "erreur": "invalide : None is not of type 'object'"
+  },
+  {
+    "fichier": "o1327.json",
+    "instance": null,
+    "valide": false,
+    "erreur": "prompt trop long (1881 tokens) - overflow"
+  },
+  {
+    "fichier": "o37788.json",
+    "instance": "<instance tronquée dans la capture>",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o37787.json",
+    "instance": {
+      "name": "Arial",
+      "age": 30,
+      "status": "active",
+      "fontFamily": "serif",
+      "fontDefinition": {
+        "family": [
+          "Arial"
+        ],
+        "size": 12,
+        "style": "italic",
+        "weight": "bold"
+      },
+      "fontResources": {
+        "$scaleFactor": "lower",
+        "$fallbackLanguage": "en"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : 30 is not valid under any of the given schemas"
+  },
+  {
+    "fichier": "o35866.json",
+    "instance": {
+      "address": {
+        "country": "USA",
+        "state": "TX",
+        "postalCode": "97211"
+      },
+      "street": "123 Main St",
+      "street2": "Avenue",
+      "city": "Austin"
+    },
+    "valide": false,
+    "erreur": "invalide : Additional properties are not allowed ('city', 'street', 'street2' were unexpected)"
+  },
+  {
+    "fichier": "o83707.json",
+    "instance": {
+      "name": "Alice",
+      "age": 12,
+      "league": "intramural"
+    },
+    "valide": false,
+    "erreur": "invalide : 'intramural' should not be valid under {'enum': ['intramural']}"
+  },
+  {
+    "fichier": "o37786.json",
+    "instance": "<instance tronquée dans la capture>",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o84363.json",
+    "instance": {
+      "platforms": [
+        "Windows",
+        "Linux"
+      ]
+    },
+    "valide": false,
+    "erreur": "invalide : ['Windows', 'Linux'] is not of type 'object'"
+  },
+  {
+    "fichier": "o91584.json",
+    "instance": {
+      "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    "valide": true,
+    "erreur": null
+  }
+]
