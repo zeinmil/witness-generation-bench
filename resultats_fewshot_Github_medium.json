@@ -1,0 +1,420 @@
+[
+  {
+    "fichier": "o10078.json",
+    "instance": "{\n    \"createdAt\": {\n        \"since\": \"2020-01-01T00:00:00Z\",\n        \"until\": \"2020-01-01T00:00:00Z\"\n    },\n    \"level\": {\n        \"comparison\": \"eq\",\n        \"value\": \"info\"\n    },\n    \"source\": {\n        \"options\": \"\",\n        \"pattern\": \"^[a-zA-Z0-9_\\-\\.]+$\"\n    },\n    \"tags\": {\n        \"match\": \"all\",\n        \"value\": []\n    },\n    \"time\": {\n        \"since\": \"2020-01-01T00:00:00Z\",\n        \"until\": \"2020-01-01T00:00:00Z\"\n    }\n}",
+    "valide": false,
+    "erreur": "JSON mal formé : Invalid \\escape: line 12 column 33 (char 254)"
+  },
+  {
+    "fichier": "o10310.json",
+    "instance": {
+      "orgName": "MyOrg",
+      "pluginName": "MyPlugin",
+      "pluginShortName": "MyPlugin",
+      "repoName": "MyRepo",
+      "repoNamesList": "MyRepo, MyRepo2",
+      "ruleName": "MyRule",
+      "teamName": "MyTeam"
+    },
+    "valide": false,
+    "erreur": "invalide : 'MyPlugin' does not match '^ghlint-plugin-(?:[A-Za-z0-9]+[-]?)+[A-Za-z0-9]$'"
+  },
+  {
+    "fichier": "o11666.json",
+    "instance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "int32"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : {'type': 'string', 'format': 'int32'} is not of type 'array'"
+  },
+  {
+    "fichier": "o11667.json",
+    "instance": {
+      "type": "string",
+      "format": "int32",
+      "defaultValue": null,
+      "enum": [
+        "integer"
+      ],
+      "minimum": 0,
+      "maximum": 4294967295,
+      "items": {
+        "$ref": "#/definitions/itemsObject"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : {'type': 'string', 'format': 'int32', 'defaultValue': None, 'enum': ['integer'], 'minimum': 0, 'maximum': 4294967295, 'items': {'$ref': '#/definitions/itemsObject'}} is not valid under any of the given schemas"
+  },
+  {
+    "fichier": "o12174.json",
+    "instance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : {'type': 'string', 'format': 'date-time'} is not of type 'array'"
+  },
+  {
+    "fichier": "o12175.json",
+    "instance": {
+      "type": "string",
+      "format": "int32",
+      "defaultValue": null,
+      "enum": [
+        "integer"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "valide": false,
+    "erreur": "invalide : {'type': 'string', 'format': 'int32', 'defaultValue': None, 'enum': ['integer'], 'minimum': 0, 'maximum': 100} is not valid under any of the given schemas"
+  },
+  {
+    "fichier": "o24621.json",
+    "instance": {
+      "modules": [
+        {
+          "name": "yotta-shrinkwrap",
+          "version": "1.0.0"
+        },
+        {
+          "name": "yotta-shrinkwrap-2.0.0",
+          "version": "2.0.0"
+        }
+      ],
+      "targets": [
+        {
+          "name": "yotta-shrinkwrap-2.0.0",
+          "version": "2.0.0",
+          "path": "yotta-shrinkwrap-2.0.0",
+          "semverSpecification": "2.0.0"
+        }
+      ]
+    },
+    "valide": false,
+    "erreur": "invalide : 'yotta-shrinkwrap-2.0.0' does not match '^[a-z]+[a-z0-9-]*$'"
+  },
+  {
+    "fichier": "o27148.json",
+    "instance": "{\n    \"aal\": \"/ndmg_atlases/labels/AAL.nii.gz\",\n    \"atlas\": \"/ndmg_atlases/atlas/MNI152_T1_1mm.nii.gz\",\n    \"bval_file\": \"/ndmg_atlases/labels/CPAC200.nii.gz\",\n    \"bvec_file\": \"/ndmg_atlases/labels/desikan.nii.gz\",\n    \"clean\": true,\n    \"cpac200\": \"/ndmg_atlases/labels/CPAC200.nii.gz\",\n    \"dti_file\": \"/ndmg_atlases/labels/desikan.nii.gz\",\n    \"dti_file_minc\": \"/ndmg_atlases/labels/desikan.nii.gz\",\n    \"",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o27154.json",
+    "instance": {
+      "config_num": 4,
+      "enum_input": "val1",
+      "file_input": "file.txt",
+      "flag_input": true,
+      "list_int_input": [
+        1,
+        2,
+        3
+      ],
+      "num_input": 0.5,
+      "str_input": "val1,val2,val3"
+    },
+    "valide": false,
+    "erreur": "invalide : True is not one of [False]"
+  },
+  {
+    "fichier": "o3626.json",
+    "instance": null,
+    "valide": false,
+    "erreur": "prompt trop long (1862 tokens) - overflow"
+  },
+  {
+    "fichier": "o39168.json",
+    "instance": {
+      "type": "car",
+      "properties": {
+        "type": "car",
+        "properties": {
+          "manufacturer": "Toyota",
+          "model": "Corolla",
+          "fuelType": "gasoline",
+          "constructionYear": 2020,
+          "VIN": "1234567890"
+        }
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : 'id' is a required property"
+  },
+  {
+    "fichier": "o39217.json",
+    "instance": "{\n    \"additionalItems\": false,\n    \"additionalProperties\": false,\n    \"dependencies\": {\n        \"additionalProperties\": false,\n        \"if\": {\n            \"properties\": {\n                \"propertyNames\": {\n                    \"type\": \"string\"\n                }\n            }\n        },\n        \"then\": {\n            \"properties\": {\n                \"propertyNames\": {\n                    \"type\": \"string\"\n                }\n            }\n        },\n        \"else\": {\n            \"properties\": {\n                \"propertyNames\": {\n                    \"type\": \"string\"\n                }\n            }\n        }\n    },\n    \"items\": {\n        \"additionalItems\": false,\n        \"additionalProperties\": false,\n        \"dependencies\": {\n            \"additionalProperties\": false,\n            \"if\": {\n                \"properties",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o4179.json",
+    "instance": "{\n    \"header\": {\n        \"gatewayTimestamp\": \"2021-01-01T00:00:00Z\",\n        \"softwareName\": \"Alpha Centauri\",\n        \"softwareVersion\": \"1.0.0\",\n        \"uploaderID\": \"johndoe\"\n    },\n    \"message\": {\n        \"ActiveFine\": 0.0,\n        \"BoostUsed\": 0.0,\n        \"CockpitBreach\": false,\n        \"Factions\": [\n            {\n                \"HappiestSystem\": \"Alpha Centauri\",\n                \"HomeSystem\": \"Alpha Centauri\",\n                \"MyReputation\": 0.0,\n                \"SquadronFaction\": \"Alpha Centauri\"\n            },\n            {\n                \"HappiestSystem\": \"Alpha Centauri\",\n                \"HomeSystem\": \"Alpha Centauri\",\n                \"MyReputation\": 0.0",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o42994.json",
+    "instance": "{\n    \"bounds\": [\n        -180,\n        -90,\n        180,\n        90\n    ],\n    \"center\": [\n        -122.4194,\n        37.7749,\n        13\n    ],\n    \"tiles\": [\n        \"https://tile.stamen.com/toner/{z}/{x}/{y}.png\"\n    ],\n    \"json\": '{\"vector_layers\":[{\"id\":\"layer1\",\"description\":\"layer 1\",\"minzoon\":0,\"maxzoon\":0}]}',\n    \"crs\": \"EPSG:4326\",\n    \"srs\": \"EPSG:4326\",\n    \"minzoom\": 0,\n    \"maxzoom\": 13,\n    \"scheme\": \"tms\"\n}",
+    "valide": false,
+    "erreur": "JSON mal formé : Expecting value: line 16 column 13 (char 236)"
+  },
+  {
+    "fichier": "o44368.json",
+    "instance": {
+      "type": "car",
+      "properties": {
+        "manufacturer": "Toyota",
+        "model": "Corolla",
+        "fuelType": "gasoline",
+        "constructionYear": 2015,
+        "VIN": "1234567890"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : 'id' is a required property"
+  },
+  {
+    "fichier": "o47656.json",
+    "instance": {
+      "encoding": "UTF-8",
+      "timeZone": "UTC",
+      "database": {
+        "dbms": "MySQL",
+        "prefix": "",
+        "x-dropFirst": false
+      },
+      "resources": {
+        "resources": [
+          {
+            "base": {},
+            "abstract": false,
+            "inheritanceStrategy": "restrict",
+            "idInjection": true,
+            "relations": {
+              "relations": [
+                {
+                  "onDelete": "restrict",
+                  "onUpdate": "restrict"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "valide": true,
+    "erreur": null
+  },
+  {
+    "fichier": "o57539.json",
+    "instance": "{\n    \"questionGroups\": [\n        {\n            \"description\": \"Array of QID difficulty groups, one per difficulty level of questions.\",\n            \"type\": \"array\",\n            \"items\": [\n                {\n                    \"description\": \"Array of QID topic groups, one per topic of questions.\",\n                    \"type\": \"array\",\n                    \"items\": [\n                        {\n                            \"description\": \"Array of question IDs (QIDs) for this topic and difficulty.\",\n                            \"type\": \"array\",\n                            \"item\": {\n                                \"description\": \"A single test question.\",\n                                \"type\": \"object\",\n                                \"additionalProperties\": false,\n                                \"properties\": {\n                                    \"qid\": {\n                                        \"$ref\": \"#/definitions/questionQID\"\n                                    },\n                                    \"points\": {\n                                        \"$ref\": \"#/definitions",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o58453.json",
+    "instance": "{\n    \"version\": \"1.0.0\",\n    \"architect\": {\n        \"architect\": {\n            \"architect\": {\n                \"architect\": {\n                    \"architect\": {\n                        \"architect\": {\n                            \"architect\": {\n                                \"architect\": {\n                                    \"architect\": {\n                                        \"architect\": {\n                                            \"architect\": {\n                                                \"architect\": {\n                                                    \"architect\": {\n                                                        \"architect\": {\n                                                            \"architect\": {\n                                                                \"architect\": {\n                                                                    \"architect\": {\n                                                                        \"architect\": {\n                                                                            \"architect\": {\n                                                                                \"architect\": {\n                                                                                    \"architect\": {\n                                                                                        \"architect\": {\n                                                                                            \"architect\": {\n                                                              ",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o63158.json",
+    "instance": "{\n    \"#\": \"#\",\n    \"data\": {\n        \"#\": \"#\",\n        \"filters\": [\n            {\n                \"column\": \"name\",\n                \"operator\": \"equals\",\n                \"value\": \"Alice\"\n            }\n        ],\n        \"id\": \"cmap-js\",\n        \"linkouts\": [\n            {\n                \"featuretype\": \"Feature\",\n                \"featuretypePattern\": \"Feature\",\n                \"isLinkingService\": false,\n                \"text\": \"cmap-js\",\n                \"url\": \"https://github.com/ncgr/cmap-js\"\n            }\n        ],\n        \"method\": \"get\",\n        \"url\": \"https://github.com/ncgr/cmap-js\"\n    },\n    \"header\": {\n        \"#\": \"#\",\n        \"attribution\": \"",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o65942.json",
+    "instance": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "required": [
+            "user",
+            "group"
+          ],
+          "properties": {
+            "user": {
+              "type": "string",
+              "minLength": 1
+            },
+            "group": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "oneOf": [
+            {
+              "$ref": "#/definitions/file_extracted_file"
+            },
+            {
+              "$ref": "#/definitions/file_extracted_dir"
+            },
+            {
+              "$ref": "#/definitions/file_extracted_link"
+            }
+          ]
+        }
+      ]
+    },
+    "valide": false,
+    "erreur": "invalide : {'type': 'array', 'items': [{'type': 'object', 'required': ['user', 'group'], 'properties': {'user': {'type': 'string', 'minLength': 1}, 'group': {'type': 'string', 'minLength': 1}}, 'oneOf': [{'$ref': '#/definitions/file_extracted_file'}, {'$ref': '#/definitions/file_extracted_dir'}, {'$ref': '#/definitions/file_extracted_link'}]}]} is not of type 'array'"
+  },
+  {
+    "fichier": "o65945.json",
+    "instance": {
+      "extracted": true,
+      "files": [
+        {
+          "name": "file1",
+          "type": "file",
+          "size": 1024,
+          "mode": "644"
+        },
+        {
+          "name": "dir1",
+          "type": "dir",
+          "size": 2048,
+          "mode": "755"
+        },
+        {
+          "name": "link1",
+          "type": "link",
+          "size": 4096,
+          "mode": "644"
+        }
+      ]
+    },
+    "valide": true,
+    "erreur": null
+  },
+  {
+    "fichier": "o68294.json",
+    "instance": {
+      "placement_id": 1,
+      "placementId": 1,
+      "inv_code": "A",
+      "invCode": "A",
+      "member": "B",
+      "keywords": [
+        {
+          "key": "keyword1",
+          "value": [
+            "value1",
+            "value2"
+          ]
+        }
+      ],
+      "traffic_source_code": "A",
+      "trafficSourceCode": "A",
+      "reserve": 10,
+      "position": "above",
+      "use_pmt_rule": true,
+      "private_sizes": [
+        {
+          "w": 300,
+          "h": 250
+        }
+      ]
+    },
+    "valide": false,
+    "erreur": "invalide : {'placement_id': 1, 'placementId': 1, 'inv_code': 'A', 'invCode': 'A', 'member': 'B', 'keywords': [{'key': 'keyword1', 'value': ['value1', 'value2']}], 'traffic_source_code': 'A', 'trafficSourceCode': 'A', 'reserve': 10, 'position': 'above', 'use_pmt_rule': True, 'private_sizes': [{'w': 300, 'h': 250}]} should not be valid under {'required': ['placementId', 'invCode', 'member']}"
+  },
+  {
+    "fichier": "o69248.json",
+    "instance": null,
+    "valide": false,
+    "erreur": "prompt trop long (4132 tokens) - overflow"
+  },
+  {
+    "fichier": "o7574.json",
+    "instance": {
+      "services": [
+        {
+          "basePath": "/var/www/html"
+        },
+        {
+          "basePath": "/var/www/js"
+        }
+      ],
+      "jsonscript": {
+        "timeout": "10",
+        "promise": "Promise"
+      },
+      "processResponse": {
+        "typeof": "function"
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : [{'basePath': '/var/www/html'}, {'basePath': '/var/www/js'}] is not of type 'object'"
+  },
+  {
+    "fichier": "o76785.json",
+    "instance": null,
+    "valide": false,
+    "erreur": "prompt trop long (4107 tokens) - overflow"
+  },
+  {
+    "fichier": "o79016.json",
+    "instance": {
+      "is": "queue",
+      "exchange": {
+        "name": "test-exchange",
+        "type": "topic",
+        "durable": true,
+        "autoDelete": true
+      },
+      "queue": {
+        "name": "test-queue",
+        "durable": true,
+        "exclusive": true,
+        "autoDelete": true
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : {'is': 'queue', 'exchange': {'name': 'test-exchange', 'type': 'topic', 'durable': True, 'autoDelete': True}, 'queue': {'name': 'test-queue', 'durable': True, 'exclusive': True, 'autoDelete': True}} should not be valid under {'required': ['queue', 'exchange']}"
+  },
+  {
+    "fichier": "o79474.json",
+    "instance": {
+      "injectRoles": {
+        "condition": {
+          "$ref": "#/definitions/condition"
+        },
+        "roles": [
+          "admin"
+        ]
+      }
+    },
+    "valide": false,
+    "erreur": "invalide : {'injectRoles': {'condition': {'$ref': '#/definitions/condition'}, 'roles': ['admin']}} is not of type 'array'"
+  },
+  {
+    "fichier": "o83286.json",
+    "instance": "{\n    \"id\": 1,\n    \"long_name\": \"Resource Mapping\",\n    \"name\": \"Resource Mapping\",\n    \"nodes\": 1,\n    \"ppn\": 1,\n    \"start_date\": \"2020-01-01T00:00:00Z\",\n    \"devices\": {\n        \"netdir_projects\": {\n            \"name\": \"projects\",\n            \"type\": \"string\"\n        },\n        \"netdrv_alice\": {\n            \"name\": \"alice\",\n            \"type\": \"string\"\n        },\n        \"net_alice\": {\n            \"name\": \"alice\",\n            \"type\": \"string\"\n        }\n    },\n    \"attributes\": {\n        \"local_job_id\": 1,\n        \"resource_name\": \"Resource Mapping\",\n        \"resource_id",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o84199.json",
+    "instance": "{\n    \"Warning!\": {\n        \"type\": \"string\"\n    },\n    \"config\": {\n        \"additionalProperties\": false,\n        \"anyOf\": [\n            {\n                \"properties\": {\n                    \"type\": {\n                        \"const\": \"select\"\n                    }\n                },\n                \"required\": [\n                    \"options\"\n                ]\n            },\n            {\n                \"not\": {\n                    \"required\": [\n                        \"options\"\n                    ]\n                },\n                \"properties\": {\n                    \"type\": {\n                        \"enum\": [\n                            \"integer\",\n                            \"text\",\n                            \"boolean\",\n                            \"array\",\n                            \"password\",\n                            \"email\",\n                            \"color\",\n                            \"float\",\n                            \"graph\",\n                            \"dashboard-select\",\n                            \"snmp3auth\",\n                            \"ldap-",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  },
+  {
+    "fichier": "o90940.json",
+    "instance": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"fields\": [\n            {\n                \"code\": 1,\n                \"name\": \"field1\",\n                \"format\": \"string\",\n                \"defaultUsage\": \"\",\n                \"usages\": [\n                    {\n                        \"name\": \"field1\",\n                        \"field\": {\n                            \"code\": 1,\n                            \"format\": \"string\",\n                            \"defaultUsage\": \"\",\n                            \"usages\": [\n                                {\n                                    \"name\": \"field1\",\n                                    \"field\": {\n                                        \"code\": 1,\n                                        \"format\": \"string\",\n                                        \"defaultUsage\": \"\",\n                                        \"usages\": [\n                                            {\n                                                \"name\": \"field1\",\n                                                \"field\": {\n                                                    \"code\": 1,\n                                                    \"format\":",
+    "valide": false,
+    "erreur": "tronqué / aucun objet JSON complet"
+  }
+]
