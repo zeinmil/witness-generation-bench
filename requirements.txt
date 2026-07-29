@@ -1,0 +1,11 @@
+torch
+transformers
+jsonschema
+pandas
+matplotlib
+langchain
+langchain-community
+langchain-core
+faiss-cpu
+sentence-transformers
+exrex

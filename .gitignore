@@ -1,0 +1,17 @@
+# Environnements Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Bases vectorielles FAISS (trop volumineuses / régénérables depuis data/)
+faiss_generaliste/
+faiss_code/
+
+# Données volumineuses (à héberger séparément si besoin, ex. Google Drive)
+data/*.json
+data/*.csv
+!data/README.md
+
+# Fichiers de session / cache
+*.log
+.DS_Store
