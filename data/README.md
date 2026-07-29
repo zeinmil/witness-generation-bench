@@ -8,7 +8,4 @@ Ce dossier est destiné à recevoir, localement :
   paires (schéma, instance), utilisée pour construire les bases vectorielles
   du RAG. Colonnes attendues : `nom_schema`, `schema`, `instance`.
 
-Ces fichiers ne sont pas versionnés dans le dépôt Git (voir `.gitignore`) car
-certains schémas dépassent plusieurs centaines de milliers de caractères. Ils
-sont disponibles séparément (Google Drive du projet) ou reconstructibles via
-les scripts de `base_construction/`.
+
