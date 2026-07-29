@@ -16,3 +16,4 @@ data/*.csv
 *.log
 .DS_Store
 !data/base_rag_FINAL.csv
+!data/corpus_not.json
