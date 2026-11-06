@@ -1,6 +1,6 @@
 # witness-generation-bench
 
-projet de recherche mené pendant mon stage de data analyst (licence IM2D,
+projet de recherche mené pendant mon stage  (licence IM2D,
 université paris-dauphine PSL), sur la capacité d'un modèle de langage à
 générer des instances json valides à partir d'un schéma json schema, en
 particulier quand celui-ci contient le mot-clé de négation `not`.
